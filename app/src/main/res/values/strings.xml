@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="game_name_text_view_label">Ping Pong Dodge Game</string>
+    <string name="team_a_text_label">Team A</string>
+    <string name="default_value_of_score_and_fouls">0</string>
+    <string name="short_shoot_button_label">Short Shoot</string>
+    <string name="long_shoot_button_label">Long Shoot</string>
+    <string name="fouls_button_label">Fouls</string>
+    <string name="team_b_text_label">Team B</string>
+    <string name="reset_button_label">Reset</string>
+</resources>

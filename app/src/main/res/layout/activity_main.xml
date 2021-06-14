@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".ViewAndControl.MainActivity">
+
+    <TextView
+        android:id="@+id/game_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="@string/game_name_text_view_label"
+        android:textColor="@color/DarkBlue"
+        android:textSize="@dimen/match_title_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reset_button"
+        android:layout_below="@id/game_name_text_view"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/team_a_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/team_a_text_label"
+                android:textSize="@dimen/team_title_text_size" />
+
+            <TextView
+                android:id="@+id/team_a_score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/default_value_of_score_and_fouls"
+                android:textColor="@color/DarkCyan"
+                android:textSize="@dimen/score_text_size" />
+
+            <TextView
+                android:id="@+id/team_a_fouls_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/default_value_of_score_and_fouls"
+                android:textColor="@color/DarkRed"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/team_a_short_shoot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_shoot_button_label" />
+
+            <Button
+                android:id="@+id/team_a_long_shoot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_shoot_button_label" />
+
+            <Button
+                android:id="@+id/team_a_fouls_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fouls_button_label" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/splite_line_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/team_b_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/team_b_text_label"
+                android:textSize="@dimen/team_title_text_size" />
+
+            <TextView
+                android:id="@+id/team_b_score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/default_value_of_score_and_fouls"
+                android:textColor="@color/DarkCyan"
+                android:textSize="@dimen/score_text_size" />
+
+            <TextView
+                android:id="@+id/team_b_fouls_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/default_value_of_score_and_fouls"
+                android:textColor="@color/DarkRed"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/team_b_short_shoot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_shoot_button_label" />
+
+            <Button
+                android:id="@+id/team_b_long_shoot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_shoot_button_label" />
+
+            <Button
+                android:id="@+id/team_b_fouls_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fouls_button_label" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="@string/reset_button_label" />
+
+
+</RelativeLayout>
